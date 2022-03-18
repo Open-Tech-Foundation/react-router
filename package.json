@@ -1,3 +1,10 @@
 {
-  "packageManager": "yarn@3.2.0"
+  "packageManager": "yarn@3.2.0",
+  "workspaces": [
+    "website"
+  ],
+  "scripts": {
+    "start": "yarn workspace website start",
+    "build:website": "yarn workspace website build"
+  }
 }
